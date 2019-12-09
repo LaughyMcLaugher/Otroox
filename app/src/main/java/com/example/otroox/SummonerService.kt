@@ -7,8 +7,8 @@ import retrofit2.Response
 class SummonerService constructor(
     private val webservice: SummonerWebService
 ){
-        fun getRandomCocktail( onDone: (Sumoner)->Unit, onError: (Throwable)->Unit ) {
-            webservice.getRandomCocktail().enqueue(object : Callback<Sumoner> {
+        fun getInvocateur( onDone: (Sumoner)->Unit, onError: (Throwable)->Unit ) {
+            webservice.getInvocateur().enqueue(object : Callback<Sumoner> {
                 override fun onResponse(
                     call: Call<Sumoner>,
                     response: Response<Sumoner>
