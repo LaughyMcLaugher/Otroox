@@ -42,18 +42,21 @@ class SummonerFragment : Fragment() {
             .build()
         val retrofitService = retrofit.create(SummonerWebService::class.java)
         val summonerService = SummonerService(retrofitService)
-        recherche.setOnClickListener{
-            val pseudo=nominvocateur.text.toString()
-            summonerService.getInvocateur(
-                pseudo,
-                { sumoner ->
-                    view.niveauinvocateur.text = sumoner.summonerLevel.toString()
-                    view.nomTrouver.text = sumoner.name
-                }, { error -> TODO() }
-            )
+        recherche.setOnClickListener {
+            val pseudo = nominvocateur.text.toString()
+                summonerService.getInvocateur(
+                    pseudo,
+                    { sumoner ->
+                        view.niveauinvocateur.text = sumoner.summonerLevel.toString()
+                        view.nomTrouver.text = sumoner.name
+                    },
+                    { error ->
+                        view.niveauinvocateur.text = "NotFound"
+                        view.nomTrouver.text = "0" }
+                )
         }
-
     }
+
 
 }
 
