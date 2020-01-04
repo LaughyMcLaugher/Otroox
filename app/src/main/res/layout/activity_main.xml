@@ -9,16 +9,17 @@
 
     <com.google.android.flexbox.FlexboxLayout
         android:id="@+id/flexbox"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="410dp"
+        android:layout_height="725dp"
         app:flexWrap="wrap"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></com.google.android.flexbox.FlexboxLayout>
 
     <com.google.android.flexbox.FlexboxLayout
         android:id="@+id/flexbox2"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="378dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="16dp"
         app:flexWrap="wrap"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></com.google.android.flexbox.FlexboxLayout>

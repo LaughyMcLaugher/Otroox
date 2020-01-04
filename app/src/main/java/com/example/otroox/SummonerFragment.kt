@@ -1,6 +1,7 @@
 package com.example.otroox
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -34,6 +35,8 @@ class SummonerFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+
         super.onViewCreated(view, savedInstanceState)
         val retrofit = Retrofit
             .Builder()
@@ -54,6 +57,7 @@ class SummonerFragment : Fragment() {
                         view.niveauinvocateur.text = "NotFound"
                         view.nomTrouver.text = "0" }
                 )
+
         }
     }
 
