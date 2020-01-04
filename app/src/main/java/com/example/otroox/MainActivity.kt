@@ -3,13 +3,18 @@ package com.example.otroox
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.telecom.Call
 import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.summoner_fragment.*
+import kotlinx.android.synthetic.main.summoner_fragment.view.*
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
 
+    //var niveaujoueur = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -25,8 +30,34 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
     fun pageMatch(view: View) {
-        startActivity(Intent(this,MatchActivity::class.java))
+/*
+        val retrofit = Retrofit
+            .Builder()
+            .baseUrl("https://euw1.api.riotgames.com")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+        val retrofitService = retrofit.create(SummonerWebService::class.java)
+        val summonerService = SummonerService(retrofitService)
+        val pseudo = nominvocateur.text.toString()
+        summonerService.getInvocateur(
+
+            pseudo,
+            { sumoner ->
+                nomjoueur = sumoner.summonerLevel.toString()
+            },
+            { error ->
+
+                nomjoueur = "NotFound"
+
+            }
+        ) */
+
+        val niveaujoueur = nomTrouver.text
+        val pintent = Intent(this,MatchActivity::class.java)
+        pintent.putExtra("nomJoueur",niveaujoueur)
+        startActivity(pintent)
     }
     }
 

@@ -35,7 +35,8 @@
         android:id="@+id/recherche"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Chercher un Invocateur" />
+        android:text="Chercher un Invocateur"
+        android:onClick="pageMatch"/>
 
     <TextView
         android:id="@+id/nomTrouver"
@@ -50,6 +51,13 @@
         android:layout_height="wrap_content"
         android:text="Niveau"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+    <TextView
+        android:id="@+id/idCompte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="id du compte"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <Button
         android:id="@+id/versmatch"
