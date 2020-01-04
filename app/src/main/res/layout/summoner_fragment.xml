@@ -55,7 +55,7 @@
         android:id="@+id/versmatch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="MatchActivity"
+        android:onClick="pageMatch"
         android:text="@string/vers_match" />
 
 

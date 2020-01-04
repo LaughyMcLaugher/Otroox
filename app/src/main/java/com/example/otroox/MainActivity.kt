@@ -3,6 +3,7 @@ package com.example.otroox
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.summoner_fragment.*
@@ -23,9 +24,9 @@ class MainActivity : AppCompatActivity() {
 
 
         }
-
     }
-
-
+    fun pageMatch(view: View) {
+        startActivity(Intent(this,MatchActivity::class.java))
+    }
     }
 

@@ -11,5 +11,5 @@ class MatchActivity : AppCompatActivity() {
         setContentView(R.layout.activity_match)
     }
 
-    fun MatchActivity(view: View) {}
+    //fun MatchActivity(view: View) {}
 }
