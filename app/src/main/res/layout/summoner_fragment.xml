@@ -40,31 +40,39 @@
         android:layout_marginLeft="70dp"
         android:layout_marginTop="8dp"
         android:onClick="pageMatch"
-        android:text="Chercher un Invocateur" />
+        android:text="Chercher un Invocateur"
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/nomTrouver"
-        android:layout_width="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="196dp"
         android:layout_height="wrap_content"
         android:background="@drawable/border"
-        android:hint="Nom de l'invocateur"
-        android:textAlignment="textEnd"
+        android:text="Nom de l'invocateur"
+        android:textAlignment="center"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/niveauinvocateur"
-        android:layout_width="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_width="196dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/border"
         android:text="Niveau"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
 
     <TextView
         android:id="@+id/idCompte"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="195dp"
+        android:layout_height="37dp"
+        android:background="@drawable/border"
         android:text="id du compte"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/versmatch"
