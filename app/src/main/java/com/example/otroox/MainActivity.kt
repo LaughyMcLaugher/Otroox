@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     fun pageMatch(view: View) {
 
-        val idjoueur = idCompte.text
+        val idjoueur = idcrypter.text
         val niveaujoueur = niveauinvocateur.text
         val nomjoueur = nomTrouver.text
         val pintent = Intent(this,MatchActivity::class.java)

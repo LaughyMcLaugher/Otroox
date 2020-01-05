@@ -1,41 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_shadow_start_color">
+    tools:context=".MatchActivity"
+    >
 
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexboxmatch"
+        android:layout_width="411dp"
+        android:layout_height="755dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:flexWrap="wrap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></com.google.android.flexbox.FlexboxLayout>
 
-    <TextView
-        android:id="@+id/nomTrouver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nom d'Invocateur"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-    <TextView
-        android:id="@+id/niveauinvocateur"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Niveau"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
-
-    <TextView
-        android:id="@+id/idCompte"
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:text="id du Compte" />
-
-    <TextView
-        android:id="@+id/role"
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:text="Nom du Role" />
-
-    <TextView
-        android:id="@+id/lane"
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:text="Nom de La Lane" />
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

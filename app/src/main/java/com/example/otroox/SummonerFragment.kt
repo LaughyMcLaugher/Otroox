@@ -53,11 +53,13 @@ class SummonerFragment : Fragment() {
                         view.niveauinvocateur.text = sumoner.summonerLevel.toString()
                         view.idCompte.text = sumoner.accountId
                         view.nomTrouver.text = sumoner.name
+                        view.idcrypter.text = sumoner.id
                     },
                     { error ->
                         view.niveauinvocateur.text = "NotFound"
                         view.nomTrouver.text = "NotFound"
                         view.idCompte.text = "NotFound"
+                        view.idcrypter.text ="NotFound"
                         }
                 )
 

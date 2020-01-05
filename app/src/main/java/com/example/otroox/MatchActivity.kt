@@ -2,20 +2,16 @@ package com.example.otroox
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import kotlinx.android.synthetic.main.activity_main.*
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import kotlinx.android.synthetic.main.activity_match.*
-import kotlinx.android.synthetic.main.summoner_fragment.view.*
+import kotlinx.android.synthetic.main.match_fragment.*
+
 
 
 class MatchActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_match)
+        setContentView(R.layout.match_fragment)
 
         var idjoueur = ""
         var niveaujoueur = ""
@@ -40,15 +36,14 @@ niveauinvocateur.text = niveaujoueur
         idCompte.text = idjoueur
 
 /*
-        val cards = 1
+        val cards = 10
         for (cardIndex in 1..cards){
             val fragment = MatchFragment()
             supportFragmentManager.beginTransaction().add(
-                flexbox.id, fragment
+                flexboxmatch.id, fragment
             ).commit()
-        } */
-
+        }
+*/
     }
 
-    //fun MatchActivity(view: View) {}
 }

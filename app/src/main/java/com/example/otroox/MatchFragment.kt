@@ -1,14 +1,14 @@
 package com.example.otroox
 
 
-import android.app.DownloadManager
-import android.content.Intent
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.activity_match.view.*
+
+import kotlinx.android.synthetic.main.match_fragment.view.*
 import kotlinx.android.synthetic.main.summoner_fragment.*
 
 //specifique au projet
@@ -34,7 +34,7 @@ class MatchFragment : Fragment() {
         // Inflate the layout for this fragment
        // val view = inflater?.inflate(R.layout.summoner_fragment, container, false)
         //return view
-        return inflater.inflate(R.layout.activity_match, container, false)
+        return inflater.inflate(R.layout.match_fragment, container, false)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,8 +57,8 @@ class MatchFragment : Fragment() {
                 matchService.getMatch(
                     idAccount,
                     { match ->
-                        view.role.text = match.role
-                        view.lane.text = match.lane
+                        view.role.text = match.championLevel.toString()
+                        view.lane.text = match.championPoints.toString()
 
                     },
                     { error ->
