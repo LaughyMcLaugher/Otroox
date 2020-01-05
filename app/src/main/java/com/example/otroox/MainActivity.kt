@@ -25,9 +25,6 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction().add(
                 flexbox.id, fragment
             ).commit()
-
-
-
         }
     }
 

@@ -76,7 +76,7 @@
 
     <Button
         android:id="@+id/versmatch"
-        android:layout_width="match_parent"
+        android:layout_width="358dp"
         android:layout_height="wrap_content"
         android:onClick="pageMatch"
         android:text="@string/vers_match" />

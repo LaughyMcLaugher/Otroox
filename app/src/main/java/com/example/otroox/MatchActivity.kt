@@ -39,6 +39,15 @@ nomTrouver.text = nomjoueur
 niveauinvocateur.text = niveaujoueur
         idCompte.text = idjoueur
 
+/*
+        val cards = 1
+        for (cardIndex in 1..cards){
+            val fragment = MatchFragment()
+            supportFragmentManager.beginTransaction().add(
+                flexbox.id, fragment
+            ).commit()
+        } */
+
     }
 
     //fun MatchActivity(view: View) {}

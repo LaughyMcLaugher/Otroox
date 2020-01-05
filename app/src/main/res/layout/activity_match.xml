@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background">
+    android:background="@color/cardview_shadow_start_color">
 
 
     <TextView
@@ -24,6 +24,18 @@
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:text="id du Compte" />
+
+    <TextView
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="Nom du Role" />
+
+    <TextView
+        android:id="@+id/lane"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="Nom de La Lane" />
 
 
 </LinearLayout>
