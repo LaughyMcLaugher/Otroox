@@ -6,10 +6,10 @@
 
     <com.google.android.material.card.MaterialCardView
         style="@style/Widget.MaterialComponents.CardView"
-        android:layout_width="411dp"
+        android:layout_width="300dp"
         android:layout_height="41dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="200dp"
         android:layout_marginRight="8dp">
 
 
@@ -17,7 +17,9 @@
             android:id="@+id/nominvocateur"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="nominvocateur"></EditText>
+            android:layout_marginLeft="70dp"
+            android:hint="Pseudo du Joueur"
+            ></EditText>
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -33,16 +35,21 @@
 
     <Button
         android:id="@+id/recherche"
-        android:layout_width="match_parent"
+        android:layout_width="227dp"
         android:layout_height="wrap_content"
-        android:text="Chercher un Invocateur"
-        android:onClick="pageMatch"/>
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="8dp"
+        android:onClick="pageMatch"
+        android:text="Chercher un Invocateur" />
 
     <TextView
         android:id="@+id/nomTrouver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nom d'Invocateur"
+        android:background="@drawable/border"
+        android:hint="Nom de l'invocateur"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
