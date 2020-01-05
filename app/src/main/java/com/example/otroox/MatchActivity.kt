@@ -17,13 +17,27 @@ class MatchActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_match)
 
+        var idjoueur = ""
+        var niveaujoueur = ""
         var nomjoueur = ""
         if (intent.hasExtra("nomJoueur")) { // vérifie qu'une valeur est associée à la clé “edittext”
-            nomjoueur = intent.getStringExtra("nomjoueur") // on récupère la valeur associée à la clé
+            nomjoueur = intent.getStringExtra("nomJoueur") // on récupère la valeur associée à la clé
         }
         else{nomjoueur = "nop"}
-niveauinvocateur.text = nomjoueur.toString()
 
+        if (intent.hasExtra("niveauJoueur")) { // vérifie qu'une valeur est associée à la clé “edittext”
+            niveaujoueur = intent.getStringExtra("niveauJoueur") // on récupère la valeur associée à la clé
+        }
+        else{niveaujoueur = "nop"}
+
+        if (intent.hasExtra("idJoueur")) { // vérifie qu'une valeur est associée à la clé “edittext”
+            idjoueur = intent.getStringExtra("idJoueur") // on récupère la valeur associée à la clé
+        }
+        else{idjoueur = "nop"}
+
+nomTrouver.text = nomjoueur
+niveauinvocateur.text = niveaujoueur
+        idCompte.text = idjoueur
 
     }
 

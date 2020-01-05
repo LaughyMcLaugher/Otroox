@@ -51,7 +51,6 @@ class SummonerFragment : Fragment() {
                     pseudo,
                     { sumoner ->
                         view.niveauinvocateur.text = sumoner.summonerLevel.toString()
-
                         view.idCompte.text = sumoner.accountId
                         view.nomTrouver.text = sumoner.name
                     },

@@ -32,31 +32,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun pageMatch(view: View) {
-/*
-        val retrofit = Retrofit
-            .Builder()
-            .baseUrl("https://euw1.api.riotgames.com")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-        val retrofitService = retrofit.create(SummonerWebService::class.java)
-        val summonerService = SummonerService(retrofitService)
-        val pseudo = nominvocateur.text.toString()
-        summonerService.getInvocateur(
 
-            pseudo,
-            { sumoner ->
-                nomjoueur = sumoner.summonerLevel.toString()
-            },
-            { error ->
-
-                nomjoueur = "NotFound"
-
-            }
-        ) */
-
-        val niveaujoueur = nomTrouver.text
+        val idjoueur = idCompte.text
+        val niveaujoueur = niveauinvocateur.text
+        val nomjoueur = nomTrouver.text
         val pintent = Intent(this,MatchActivity::class.java)
-        pintent.putExtra("nomJoueur",niveaujoueur)
+        pintent.putExtra("nomJoueur",nomjoueur)
+        pintent.putExtra("niveauJoueur",niveaujoueur)
+        pintent.putExtra("idJoueur",idjoueur)
         startActivity(pintent)
     }
     }
